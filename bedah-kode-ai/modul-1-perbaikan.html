@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Warung Soto Banjar Bu Ijah: menu favorit, harga, dan form reservasi.">
+  <title>Warung Soto Banjar Bu Ijah | Reservasi</title>
+</head>
+<body>
+  <header>
+    <p class="judul">Warung Soto Banjar Bu Ijah</p>
+    <nav aria-label="Navigasi utama">
+      <ul class="menu">
+        <li><a href="#beranda" aria-current="page">Beranda</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reservasi">Reservasi</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="beranda">
+    <h1>Selamat Datang di Warung Soto Banjar Bu Ijah</h1>
+
+    <section id="menu">
+      <h2>Menu Favorit</h2>
+      <article>
+        <img src="img/soto-banjar.svg" alt="Ilustrasi Soto Banjar" width="600" height="400">
+        <h3>Soto Banjar</h3>
+        <p>Rp 20.000</p>
+      </article>
+      <article>
+        <img src="img/ketupat-kandangan.svg" alt="Ilustrasi Ketupat Kandangan" width="600" height="400">
+        <h3>Ketupat Kandangan</h3>
+        <p>Rp 25.000</p>
+      </article>
+    </section>
+
+    <section id="reservasi">
+      <h2>Reservasi</h2>
+      <form action="#" method="get">
+        <p>
+          <label for="nama">Nama</label>
+          <input type="text" id="nama" name="nama" required autocomplete="name">
+        </p>
+        <p>
+          <label for="hp">No HP</label>
+          <input type="tel" id="hp" name="hp" required pattern="08[0-9]{8,11}"
+            placeholder="Contoh: 081234567890" autocomplete="tel">
+        </p>
+        <p>
+          <label for="tanggal">Tanggal</label>
+          <input type="date" id="tanggal" name="tanggal" required>
+        </p>
+        <p>
+          <label for="jumlah">Jumlah orang</label>
+          <input type="number" id="jumlah" name="jumlah" min="1" max="50" value="1" required>
+        </p>
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+
+    <section id="kontak">
+      <h2>Kontak dan Lokasi</h2>
+      <p>Lihat lokasi warung di <a href="https://maps.google.com">Google Maps</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Copyright 2026 Warung Soto Banjar Bu Ijah</p>
+  </footer>
+</body>
+</html>
