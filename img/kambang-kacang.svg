@@ -1,11 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
-  <defs><pattern id="p" width="50" height="50" patternUnits="userSpaceOnUse">
-        <circle cx="25" cy="25" r="9" fill="#f2c14e"/><circle cx="25" cy="10" r="5" fill="#f2c14e" opacity=".7"/>
-        <circle cx="25" cy="40" r="5" fill="#f2c14e" opacity=".7"/><circle cx="10" cy="25" r="5" fill="#f2c14e" opacity=".7"/>
-        <circle cx="40" cy="25" r="5" fill="#f2c14e" opacity=".7"/></pattern></defs>
-  <rect width="600" height="400" fill="#1f5f5b"/>
-  <rect width="600" height="400" fill="url(#p)" opacity="0.55"/>
-  <rect x="60" y="150" width="480" height="100" rx="14" fill="#ffffff" opacity="0.92"/>
-  <text x="300" y="196" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#1f5f5b">Motif Kambang Kacang</text>
-  <text x="300" y="230" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#444">Sasirangan Banua · gambar contoh</text>
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#4ECDC4"/>
+  <text x="50%" y="45%" font-family="Arial, sans-serif" font-size="32" fill="#1A535C" text-anchor="middle" font-weight="bold">Kain Motif Kambang Kacang</text>
+  <text x="50%" y="58%" font-family="Arial, sans-serif" font-size="18" fill="#1A535C" text-anchor="middle">Sasirangan Bunga Kacang</text>
+  
+  <!-- Simple pattern overlay for aesthetic -->
+  <circle cx="50%" cy="80%" r="30" fill="#1A535C" opacity="0.2"/>
+  <circle cx="43%" cy="80%" r="20" fill="#1A535C" opacity="0.2"/>
+  <circle cx="57%" cy="80%" r="20" fill="#1A535C" opacity="0.2"/>
 </svg>

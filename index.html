@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Katalog kain dan busana Sasirangan khas Banjarmasin karya pengrajin lokal.">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/katalog.js" defer></script>
   <title>Sasirangan Banua | Kain Khas Banjar</title>
 </head>
 
@@ -37,66 +38,24 @@
       <h2>Katalog Produk</h2>
       <p>Pilihan kain, busana, dan aksesoris Sasirangan terbaru.</p>
 
-      <div class="katalog-grid">
-        <article class="kartu">
-          <img src="img/gigi-haruan.svg" alt="Kain sasirangan motif gigi haruan warna merah marun" width="600"
-            height="400">
-          <div class="kartu-isi">
-            <h3>Kain Motif Gigi Haruan</h3>
-            <p>Kain katun 2 meter bermotif zig-zag menyerupai gigi ikan haruan.</p>
-            <p class="harga">Rp185.000</p>
-          </div>
-        </article>
-
-        <article class="kartu">
-          <img src="img/kambang-kacang.svg" alt="Kain sasirangan motif kambang kacang warna hijau tosca" width="600"
-            height="400">
-          <div class="kartu-isi">
-            <h3>Kain Motif Kambang Kacang</h3>
-            <p>Motif bunga kacang yang melambangkan keakraban dan kerukunan.</p>
-            <p class="harga">Rp175.000</p>
-          </div>
-        </article>
-
-        <article class="kartu">
-          <img src="img/iris-pudak.svg" alt="Selendang sasirangan motif iris pudak warna ungu" width="600" height="400">
-          <div class="kartu-isi">
-            <h3>Selendang Iris Pudak</h3>
-            <p>Selendang tipis dengan motif iris pudak, cocok untuk acara adat dan resmi.</p>
-            <p class="harga">Rp150.000</p>
-          </div>
-        </article>
-
-        <article class="kartu">
-          <img src="img/bayam-raja.svg" alt="Kemeja sasirangan motif bayam raja warna hijau tua" width="600"
-            height="400">
-          <div class="kartu-isi">
-            <h3>Kemeja Bayam Raja</h3>
-            <p>Kemeja lengan panjang dengan motif daun bayam raja yang menyejukkan.</p>
-            <p class="harga">Rp350.000</p>
-          </div>
-        </article>
-
-        <article class="kartu">
-          <img src="img/naga-balimbur.svg" alt="Tas sasirangan motif naga balimbur warna cokelat" width="600"
-            height="400">
-          <div class="kartu-isi">
-            <h3>Tas Naga Balimbur</h3>
-            <p>Tas tangan berhias motif naga balimbur yang melingkar.</p>
-            <p class="harga">Rp225.000</p>
-          </div>
-        </article>
-
-        <article class="kartu">
-          <img src="img/ombak-sinapur-karang.svg" alt="Gamis sasirangan motif ombak sinapur karang warna biru"
-            width="600" height="400">
-          <div class="kartu-isi">
-            <h3>Gamis Ombak Sinapur Karang</h3>
-            <p>Gamis dengan motif ombak yang terinspirasi dari sungai Banjar.</p>
-            <p class="harga">Rp400.000</p>
-          </div>
-        </article>
+      <div class="kontrol-katalog">
+        <div class="kolom">
+          <label for="cari">Cari produk</label>
+          <input type="search" id="cari" placeholder="Contoh: kemeja, selendang">
+        </div>
+        <div class="filter" role="group" aria-label="Filter kategori">
+          <button type="button" class="tombol-filter aktif" data-kategori="semua" aria-pressed="true">Semua</button>
+          <button type="button" class="tombol-filter" data-kategori="kain" aria-pressed="false">Kain</button>
+          <button type="button" class="tombol-filter" data-kategori="pakaian" aria-pressed="false">Pakaian</button>
+          <button type="button" class="tombol-filter" data-kategori="aksesoris" aria-pressed="false">Aksesoris</button>
+        </div>
       </div>
+
+      <p id="info-jumlah" class="info-jumlah" aria-live="polite"></p>
+      <div id="daftar-katalog" class="katalog-grid"></div>
+      <noscript>
+        <p>Aktifkan JavaScript untuk melihat katalog produk.</p>
+      </noscript>
     </section>
 
     <!-- ========== TENTANG ========== -->
