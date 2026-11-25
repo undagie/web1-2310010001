@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Katalog kain dan busana Sasirangan khas Banjarmasin karya pengrajin lokal.">
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/katalog.js" defer></script>
+  <script src="js/jadwal-salat.js" defer></script>
   <title>Sasirangan Banua | Kain Khas Banjar</title>
 </head>
 
@@ -96,6 +98,16 @@
           </tr>
         </tbody>
       </table>
+    </section>
+
+    <!-- ========== JADWAL SALAT (data dari API) ========== -->
+    <section class="bagian" id="jadwal">
+      <div class="jadwal-salat" id="jadwal-salat">
+        <h2>Jadwal Salat Banjarmasin Hari Ini</h2>
+        <p class="status" aria-live="polite">Memuat jadwal salat...</p>
+        <ul class="daftar-waktu" hidden></ul>
+        <p class="sumber">Sumber data: API MyQuran (jadwal Kemenag RI).</p>
+      </div>
     </section>
   </main>
 

@@ -437,3 +437,48 @@ input[type="checkbox"] {
         max-width: 22rem;
     }
 }
+
+/* ---------- 13. Widget jadwal salat (Modul 4) ---------- */
+.jadwal-salat {
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    background: linear-gradient(135deg, #1f5f5b, #16467a);
+    color: #ffffff;
+}
+
+.jadwal-salat h2 {
+    margin: 0 0 0.25rem;
+    color: #ffffff;
+}
+
+.jadwal-salat .status {
+    margin: 0 0 1rem;
+}
+
+.daftar-waktu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 0.75rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.daftar-waktu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.75rem;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.daftar-waktu strong {
+    font-size: 1.4rem;
+}
+
+.jadwal-salat .sumber {
+    margin: 1rem 0 0;
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
